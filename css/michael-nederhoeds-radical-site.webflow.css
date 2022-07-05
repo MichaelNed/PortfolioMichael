@@ -350,8 +350,8 @@ body {
   display: -ms-flexbox;
   display: flex;
   overflow: visible;
-  height: 105vh;
-  max-height: 900px;
+  height: 102vh;
+  max-height: 850px;
   margin-top: 0px;
   margin-right: 0px;
   margin-left: 0px;
@@ -371,7 +371,7 @@ body {
   align-items: center;
   border: 1px none #000;
   border-radius: 0px;
-  background-color: #111313;
+  background-color: #111212;
   text-transform: none;
   -o-object-fit: fill;
   object-fit: fill;
@@ -1157,9 +1157,9 @@ body {
   right: 0%;
   bottom: 0%;
   width: 800px;
-  height: 30vh;
+  height: 25vh;
   padding-top: 10vh;
-  padding-bottom: 5vh;
+  padding-bottom: 1vh;
   clear: none;
   border: 1px none #000;
 }
@@ -1320,7 +1320,7 @@ body {
   border-style: solid;
   border-width: 1px;
   border-color: transparent;
-  background-color: #111313;
+  background-color: #111212;
   color: #921b1b;
   background-clip: border-box;
   -webkit-text-fill-color: inherit;
@@ -1681,7 +1681,7 @@ body {
   object-position: 50% 100%;
 }
 
-.div-block-19 {
+.video2 {
   position: absolute;
   left: 0%;
   top: auto;
@@ -1691,15 +1691,24 @@ body {
   overflow: hidden;
   width: 700px;
   height: 700px;
+  margin-bottom: 0px;
   margin-left: -15px;
   background-color: rgba(26, 26, 26, 0);
-  opacity: 0.7;
+  opacity: 0.2;
   outline-color: rgba(146, 27, 27, 0);
   outline-offset: 0px;
   outline-style: none;
   outline-width: 3px;
   color: rgba(146, 27, 27, 0);
+  background-clip: border-box;
+  -webkit-text-fill-color: inherit;
   mix-blend-mode: normal;
+}
+
+@media all and (-webkit-min-device-pixel-ratio:0) and (min-resolution: .001dpcm) { 
+       .video1, .video2 {
+    opacity: 1;
+    } 
 }
 
 .div-block-19-copy {
@@ -1765,22 +1774,23 @@ body {
   object-position: 50% 100%;
 }
 
-.div-block-19-copy {
+.video1 {
   position: absolute;
   left: auto;
   top: 0%;
   right: 0%;
   bottom: 0%;
+  z-index: 0;
   display: block;
   overflow: hidden;
   width: 700px;
   height: 1100px;
-  margin-top: -166px;
+  margin-top: -327px;
   margin-bottom: 0px;
   margin-left: -15px;
   border-radius: 0px;
-  background-color: rgba(26, 26, 26, 0);
-  opacity: 0.7;
+  background-color: #111212;
+  opacity: 0.2;
   outline-color: rgba(146, 27, 27, 0);
   outline-offset: 0px;
   outline-style: none;
@@ -2086,15 +2096,17 @@ body {
 }
 
 .background-video-4 {
-  position: relative;
+  position: -webkit-sticky;
+  position: sticky;
   z-index: 23;
   overflow: visible;
   width: 700px;
   height: 700px;
-  margin-top: 220px;
+  margin-top: 171px;
   margin-left: -331px;
-  border-radius: 100px;
-  mix-blend-mode: normal;
+  border-radius: 1000px;
+  opacity: 1;
+  mix-blend-mode: difference;
   -o-object-fit: fill;
   object-fit: fill;
 }
@@ -2102,10 +2114,12 @@ body {
 .background-video-5 {
   position: -webkit-sticky;
   position: sticky;
-  width: 800px;
-  height: 800px;
-  margin-left: 206px;
-  border-radius: 600px;
+  z-index: 0;
+  width: 750px;
+  height: 750px;
+  margin-left: 261px;
+  border-radius: 0px;
+  opacity: 1;
   mix-blend-mode: normal;
   -o-object-fit: fill;
   object-fit: fill;
@@ -2613,7 +2627,7 @@ body {
     opacity: 0.45;
   }
 
-  .div-block-19 {
+  .video2 {
     width: auto;
   }
 
@@ -2844,7 +2858,7 @@ body {
     margin-left: -136px;
   }
 
-  .div-block-19 {
+  .video2 {
     width: 300px;
   }
 
@@ -2971,4 +2985,10 @@ body {
   -ms-grid-row: 1;
   -ms-grid-column: 1;
   grid-area: Area;
+}
+
+@media all and (-webkit-min-device-pixel-ratio:0) and (min-resolution: .001dpcm) { 
+       .video1, .video2 {
+    opacity: 0.3;
+    } 
 }
